@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teardown kênh {{TEN_KENH}}</title>
+<style>
+  :root{--bg:#fbfaf8;--card:#fff;--ink:#1c1b1a;--mute:#6b6762;--line:#e4e0da;--red:#e00000;--acc:#8a2b4d;--ok:#1d6b3a;--warn:#9a5b00}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Segoe UI",Arial,sans-serif}
+  main{max-width:980px;margin:0 auto;padding:24px 16px 80px}
+  h1{font-size:30px;line-height:1.2;margin:8px 0 4px}
+  h2{font-size:23px;margin:44px 0 10px;padding-top:14px;border-top:3px solid var(--ink)}
+  h2 .n{display:inline-block;background:var(--ink);color:#fff;border-radius:6px;padding:0 10px;margin-right:8px}
+  h3{font-size:18px;margin:26px 0 6px;color:var(--acc)}
+  p{margin:8px 0}
+  .sub{color:var(--mute)}
+  table{border-collapse:collapse;width:100%;margin:10px 0;background:var(--card);font-size:15px}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+  th{background:#f1ede7}
+  .tw{overflow-x:auto}
+  figure{margin:14px 0 6px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px}
+  .shot{position:relative;line-height:0}
+  .shot img{width:100%;height:auto;border-radius:4px}
+  .b{position:absolute;border:3px solid var(--red);border-radius:10px;box-shadow:0 0 0 2px rgba(255,255,255,.75)}
+  .b i{position:absolute;left:-3px;top:-24px;background:var(--red);color:#fff;font:bold 13px/1 Arial;padding:4px 7px;border-radius:5px;font-style:normal;white-space:nowrap}
+  figcaption{font-size:14.5px;line-height:1.5;color:#333;padding:8px 4px 2px}
+  figcaption b{color:var(--red)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:720px){.grid2{grid-template-columns:1fr}}
+  pre{background:#16151a;color:#f2efe9;padding:12px 14px;border-radius:8px;overflow-x:auto;font:13.5px/1.5 Consolas,monospace;white-space:pre-wrap}
+  .tag{display:inline-block;font-size:12.5px;font-weight:bold;border-radius:4px;padding:1px 7px;margin-right:4px}
+  .t-ok{background:#dff3e5;color:var(--ok)} .t-inf{background:#fdeccb;color:var(--warn)} .t-unk{background:#eee;color:#555}
+  .box{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--acc);border-radius:6px;padding:10px 14px;margin:12px 0}
+  .toc a{color:var(--acc);text-decoration:none} .toc li{margin:2px 0}
+  ul{padding-left:22px;margin:6px 0} li{margin:3px 0}
+</style>
+</head>
+<body>
+<main>
+
+<p class="sub">Bảng nghiên cứu đối thủ · quét ngày {{NGAY_QUET}}</p>
+<h1>Teardown kênh {{TEN_KENH}}</h1>
+<p class="sub">Nguồn: {{LIET_KE_NGUON: số bài, số Reels đo lượt xem, highlight, video đã cắt khung, kênh cùng ngách, trang bán hàng...}}. Vùng khoanh <b style="color:#e00000">đỏ</b> trên mỗi ảnh là chỗ cần nhìn.</p>
+
+<div class="box">
+<b>Cách đọc nhãn:</b>
+<span class="tag t-ok">Xác nhận</span> thấy trực tiếp trên kênh ·
+<span class="tag t-inf">Suy luận</span> rút ra từ dữ liệu, chưa được chủ kênh nói thẳng ·
+<span class="tag t-unk">Chưa biết</span> chưa quét được.
+</div>
+
+<ol class="toc">
+<li><a href="#s1">Hồ sơ và định vị</a></li>
+<li><a href="#s2">Phễu bán hàng và giá</a></li>
+<li><a href="#s3">Đường tăng trưởng</a></li>
+<li><a href="#s4">Các tuyến nội dung và hiệu quả</a></li>
+<li><a href="#s5">Mổ video từng giây + prompt viết ngược</a></li>
+<li><a href="#s6">Bài thất bại</a></li>
+<li><a href="#s7">Công cụ và tính năng họ chọn</a></li>
+<li><a href="#s8">Caption, CTA, hashtag, giờ đăng, âm thanh</a></li>
+<li><a href="#s9">Khán giả quan tâm điều gì</a></li>
+<li><a href="#s10">So với cả ngách</a></li>
+<li><a href="#s11">Nền tảng khác của cùng chủ kênh</a></li>
+<li><a href="#s12">Việc chưa làm được</a></li>
+<li><a href="#s13">Kết luận và việc cần quyết</a></li>
+</ol>
+
+<!-- MẪU MỘT ẢNH CÓ KHOANH ĐỎ (toạ độ tính theo % của ảnh: left, top, width, height) -->
+<!--
+<figure>
+  <div class="shot"><img src="img/01-profile.jpg" alt="Trang cá nhân">
+    <div class="b" style="left:43%;top:8.5%;width:14.5%;height:4.5%"><i>A</i></div>
+    <div class="b" style="left:43%;top:17%;width:14%;height:9%"><i>B</i></div>
+  </div>
+  <figcaption><b>A</b> ... <b>B</b> ...</figcaption>
+</figure>
+-->
+
+<!-- ===================== 1 ===================== -->
+<h2 id="s1"><span class="n">1</span>Hồ sơ và định vị</h2>
+<!-- HƯỚNG DẪN: Ảnh trang cá nhân khoanh A/B/C: số follower, bio, highlight. Ghi: họ bán gì, cho ai, định vị một câu. -->
+<p>{{NOI_DUNG_MUC_1}}</p>
+
+<!-- ===================== 2 ===================== -->
+<h2 id="s2"><span class="n">2</span>Phễu bán hàng và giá</h2>
+<!-- HƯỚNG DẪN: Mọi link, giá, sản phẩm của AI/của ai, CTA, bằng chứng họ khoe. Bảng: nguồn tiền | giá | của ai. -->
+<p>{{NOI_DUNG_MUC_2}}</p>
+
+<!-- ===================== 3 ===================== -->
+<h2 id="s3"><span class="n">3</span>Đường tăng trưởng</h2>
+<!-- HƯỚNG DẪN: Bảng nhóm N bài theo thời gian (chạy scripts/phan-tich-so-lieu.py). Tìm ĐIỂM GÃY trong khung .box. -->
+<p>{{NOI_DUNG_MUC_3}}</p>
+
+<!-- ===================== 4 ===================== -->
+<h2 id="s4"><span class="n">4</span>Các tuyến nội dung và hiệu quả</h2>
+<!-- HƯỚNG DẪN: Gom bài theo tuyến nội dung; bảng: tuyến | độ dài | lượt xem trung vị | cao nhất | ghi chú. -->
+<p>{{NOI_DUNG_MUC_4}}</p>
+
+<!-- ===================== 5 ===================== -->
+<h2 id="s5"><span class="n">5</span>Mổ video từng giây + prompt viết ngược</h2>
+<!-- HƯỚNG DẪN: Mỗi video top: ảnh 12 khung (viền đỏ = cú cắt) + chú thích + prompt viết ngược trong <pre> theo công thức Seedance của anh. Gắn nhãn Suy luận, chưa chạy thử. -->
+<p>{{NOI_DUNG_MUC_5}}</p>
+
+<!-- ===================== 6 ===================== -->
+<h2 id="s6"><span class="n">6</span>Bài thất bại</h2>
+<!-- HƯỚNG DẪN: 1 bài thất bại để đối chiếu + các kiểu bài luôn thấp. -->
+<p>{{NOI_DUNG_MUC_6}}</p>
+
+<!-- ===================== 7 ===================== -->
+<h2 id="s7"><span class="n">7</span>Công cụ và tính năng họ chọn</h2>
+<!-- HƯỚNG DẪN: Công cụ, tính năng, lựa chọn tạo cảm giác 'thật'. Chỉ ghi điều quan sát được; còn lại là Suy luận. -->
+<p>{{NOI_DUNG_MUC_7}}</p>
+
+<!-- ===================== 8 ===================== -->
+<h2 id="s8"><span class="n">8</span>Caption, CTA, hashtag, giờ đăng, âm thanh</h2>
+<!-- HƯỚNG DẪN: Khuôn caption, CTA qua các giai đoạn, hashtag, giờ đăng (giải mã từ shortcode), âm thanh, tỉ lệ tương tác. -->
+<p>{{NOI_DUNG_MUC_8}}</p>
+
+<!-- ===================== 9 ===================== -->
+<h2 id="s9"><span class="n">9</span>Khán giả quan tâm điều gì</h2>
+<!-- HƯỚNG DẪN: Ai bình luận, hỏi gì, tương tác thật hay chéo. Ẩn danh người bình luận, không ghi dữ liệu riêng tư. -->
+<p>{{NOI_DUNG_MUC_9}}</p>
+
+<!-- ===================== 10 ===================== -->
+<h2 id="s10"><span class="n">10</span>So với cả ngách</h2>
+<!-- HƯỚNG DẪN: So 3–4 kênh cùng ngách: công thức chung của ngách vs điểm riêng của kênh này. -->
+<p>{{NOI_DUNG_MUC_10}}</p>
+
+<!-- ===================== 11 ===================== -->
+<h2 id="s11"><span class="n">11</span>Nền tảng khác của cùng chủ kênh</h2>
+<!-- HƯỚNG DẪN: TikTok, Threads, YouTube... của cùng chủ kênh (nếu có). -->
+<p>{{NOI_DUNG_MUC_11}}</p>
+
+<!-- ===================== 12 ===================== -->
+<h2 id="s12"><span class="n">12</span>Việc chưa làm được</h2>
+<!-- HƯỚNG DẪN: Bảng: việc | tình trạng | cần gì. Mọi việc có tác động ra ngoài (nhắn tin, mua, đăng ký) phải xin phép trước. -->
+<p>{{NOI_DUNG_MUC_12}}</p>
+
+<!-- ===================== 13 ===================== -->
+<h2 id="s13"><span class="n">13</span>Kết luận và việc cần quyết</h2>
+<!-- HƯỚNG DẪN: Năm điều rút ra; thứ tự thử cho nhân vật của mình (bảng ưu tiên | khuôn | độ dài | lý do); các việc cần quyết. -->
+<p>{{NOI_DUNG_MUC_13}}</p>
+
+</main>
+</body>
+</html>
