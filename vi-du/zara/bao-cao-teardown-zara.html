@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teardown kênh @iamfacelesszara</title>
+<style>
+  :root{--bg:#fbfaf8;--card:#fff;--ink:#1c1b1a;--mute:#6b6762;--line:#e4e0da;--red:#e00000;--acc:#8a2b4d;--ok:#1d6b3a;--warn:#9a5b00}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Segoe UI",Arial,sans-serif}
+  main{max-width:980px;margin:0 auto;padding:24px 16px 80px}
+  h1{font-size:30px;line-height:1.2;margin:8px 0 4px}
+  h2{font-size:23px;margin:44px 0 10px;padding-top:14px;border-top:3px solid var(--ink)}
+  h2 .n{display:inline-block;background:var(--ink);color:#fff;border-radius:6px;padding:0 10px;margin-right:8px}
+  h3{font-size:18px;margin:26px 0 6px;color:var(--acc)}
+  p{margin:8px 0}
+  .sub{color:var(--mute)}
+  table{border-collapse:collapse;width:100%;margin:10px 0;background:var(--card);font-size:15px}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+  th{background:#f1ede7}
+  .tw{overflow-x:auto}
+  figure{margin:14px 0 6px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px}
+  .shot{position:relative;line-height:0}
+  .shot img{width:100%;height:auto;border-radius:4px}
+  .b{position:absolute;border:3px solid var(--red);border-radius:10px;box-shadow:0 0 0 2px rgba(255,255,255,.75)}
+  .b i{position:absolute;left:-3px;top:-24px;background:var(--red);color:#fff;font:bold 13px/1 Arial;padding:4px 7px;border-radius:5px;font-style:normal;white-space:nowrap}
+  figcaption{font-size:14.5px;line-height:1.5;color:#333;padding:8px 4px 2px}
+  figcaption b{color:var(--red)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:720px){.grid2{grid-template-columns:1fr}}
+  pre{background:#16151a;color:#f2efe9;padding:12px 14px;border-radius:8px;overflow-x:auto;font:13.5px/1.5 Consolas,monospace;white-space:pre-wrap}
+  .tag{display:inline-block;font-size:12.5px;font-weight:bold;border-radius:4px;padding:1px 7px;margin-right:4px}
+  .t-ok{background:#dff3e5;color:var(--ok)} .t-inf{background:#fdeccb;color:var(--warn)} .t-unk{background:#eee;color:#555}
+  .box{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--acc);border-radius:6px;padding:10px 14px;margin:12px 0}
+  .toc a{color:var(--acc);text-decoration:none} .toc li{margin:2px 0}
+  ul{padding-left:22px;margin:6px 0} li{margin:3px 0}
+</style>
+</head>
+<body>
+<main>
+
+<p class="sub">Bảng nghiên cứu đối thủ · quét ngày 03/10/2026</p>
+<h1>Teardown kênh Instagram @iamfacelesszara</h1>
+<p class="sub">Nguồn: 189 bài (lượt xem của 185 Reels, caption của cả 189 bài), 5 highlight, 9 video top được cắt khung theo giây, 1 bài thất bại để đối chiếu, 4 kênh cùng ngách, TikTok, Threads, trang bán hàng. Vùng khoanh <b style="color:#e00000">đỏ</b> trên mỗi ảnh là chỗ cần nhìn.</p>
+
+<div class="box">
+<b>Cách đọc nhãn:</b>
+<span class="tag t-ok">Xác nhận</span> thấy trực tiếp trên kênh ·
+<span class="tag t-inf">Suy luận</span> em rút ra từ dữ liệu, chưa được cô ấy nói thẳng ·
+<span class="tag t-unk">Chưa biết</span> chưa quét được.
+</div>
+
+<ol class="toc">
+<li><a href="#s1">Hồ sơ và định vị</a></li>
+<li><a href="#s2">Phễu bán hàng và giá</a></li>
+<li><a href="#s3">Đường tăng trưởng</a></li>
+<li><a href="#s4">Các tuyến nội dung và hiệu quả</a></li>
+<li><a href="#s5">Mổ video từng giây + prompt viết ngược</a></li>
+<li><a href="#s6">Bài thất bại</a></li>
+<li><a href="#s7">Công cụ và tính năng họ chọn</a></li>
+<li><a href="#s8">Caption, CTA, hashtag, giờ đăng, âm thanh</a></li>
+<li><a href="#s9">Khán giả quan tâm điều gì</a></li>
+<li><a href="#s10">So với cả ngách</a></li>
+<li><a href="#s11">TikTok và Threads</a></li>
+<li><a href="#s12">Ba việc chưa làm được</a></li>
+<li><a href="#s13">Kết luận và việc anh cần quyết</a></li>
+</ol>
+
+<!-- ===================== 1 ===================== -->
+<h2 id="s1"><span class="n">1</span>Hồ sơ và định vị</h2>
+<figure>
+  <div class="shot"><img src="img/01-profile.jpg" alt="Trang cá nhân">
+    <div class="b" style="left:43%;top:8.5%;width:14.5%;height:4.5%"><i>A</i></div>
+    <div class="b" style="left:43%;top:17%;width:14%;height:9%"><i>B</i></div>
+    <div class="b" style="left:32.5%;top:29.5%;width:31%;height:11%"><i>C</i></div>
+  </div>
+  <figcaption><b>A</b> 47,8 nghìn follower, chỉ theo dõi 36 người, có tick xanh. <b>B</b> Bio 4 dòng: lời hứa ("Helping You Build With Realistic AI Avatars"), mời hợp tác, từ khoá "222 To Start", link. <b>C</b> Highlight xếp đúng thứ tự phễu: Brand deals → AICA → Results → Prompt Studio → Mentorship.</figcaption>
+</figure>
+<ul>
+<li><span class="tag t-ok">Xác nhận</span> Trang gắn nhãn "Trang cá nhân do AI tạo"; mọi Reels gắn "Nội dung do AI tạo".</li>
+<li><span class="tag t-ok">Xác nhận</span> Chủ kênh tự giới thiệu là "a regular stay at home mom", không lộ mặt.</li>
+<li><span class="tag t-ok">Xác nhận</span> Sản phẩm thật là dạy dựng AI avatar. Thời trang, làm đẹp chỉ là nội dung mồi.</li>
+</ul>
+
+<!-- ===================== 2 ===================== -->
+<h2 id="s2"><span class="n">2</span>Phễu bán hàng và giá</h2>
+<figure>
+  <div class="shot"><img src="img/02-shop.jpg" alt="Trang bán hàng">
+    <div class="b" style="left:38.6%;top:57%;width:22.4%;height:21%"><i>A</i></div>
+    <div class="b" style="left:38.6%;top:79%;width:22.4%;height:11.5%"><i>B</i></div>
+  </div>
+  <figcaption><b>A</b> Sản phẩm chính: AI Creator Academy 2.0, 197 USD, ghi 8000+ thành viên. <b>B</b> Hai mục xổ xuống: bot prompt (67 USD) và mentorship.</figcaption>
+</figure>
+<div class="tw"><table>
+<tr><th>Nguồn tiền</th><th>Giá</th><th>Của ai</th><th>Độ tin cậy</th></tr>
+<tr><td>AI Creator Academy 2.0 (AICA)</td><td>197 USD</td><td>@itsmadikobru. Zara là affiliate</td><td><span class="tag t-ok">Xác nhận</span></td></tr>
+<tr><td>AiMUSE Seedance Prompt Director Studio</td><td>67 USD</td><td>Người khác (trang ghi @sacredlysavage). Zara là affiliate</td><td><span class="tag t-ok">Xác nhận</span></td></tr>
+<tr><td>Mentorship 2 / 3 / 4 tuần</td><td>650 / 800 / 1.099 USD</td><td>Của Zara</td><td><span class="tag t-ok">Xác nhận</span></td></tr>
+<tr><td>Gọi chiến lược 1:1, 60 phút</td><td>160 USD</td><td>Của Zara</td><td><span class="tag t-ok">Xác nhận</span></td></tr>
+<tr><td>Affiliate quần áo (ShopMy, Fashion Nova, Babyboo)</td><td>hoa hồng</td><td></td><td><span class="tag t-ok">Xác nhận</span></td></tr>
+<tr><td>Brand deal (Temu, 3 bài)</td><td>không rõ</td><td></td><td><span class="tag t-ok">Xác nhận</span></td></tr>
+</table></div>
+<div class="grid2">
+<figure>
+  <div class="shot"><img src="img/m01-mentorship.jpg" alt="Mentorship">
+    <div class="b" style="left:33.5%;top:11%;width:34%;height:7%"><i>A</i></div>
+    <div class="b" style="left:33.5%;top:60%;width:34%;height:14.5%"><i>B</i></div>
+  </div>
+  <figcaption><b>A</b> Từ khoá riêng cho gói cao: DM "MENTOR". <b>B</b> Khan hiếm: "4 mentorship spots for August".</figcaption>
+</figure>
+<figure>
+  <div class="shot"><img src="img/t11-which-product.jpg" alt="Chọn gói">
+    <div class="b" style="left:32%;top:55%;width:35.5%;height:41%"><i>A</i></div>
+  </div>
+  <figcaption><b>A</b> Cô ấy tự phân loại khách: người mới → AICA; muốn bot viết prompt → AiMUSE; mua cả hai → "ELITE".</figcaption>
+</figure>
+</div>
+<p><span class="tag t-ok">Xác nhận</span> Trên Threads (21/7) cô ấy viết khoá 197 USD "đã trả lại 180 lần". Đây là lời cô ấy tự khai, em không kiểm chứng được. <span class="tag t-unk">Chưa biết</span> Doanh thu thật và tỉ lệ chốt.</p>
+
+<!-- ===================== 3 ===================== -->
+<h2 id="s3"><span class="n">3</span>Đường tăng trưởng</h2>
+<p>Bài đầu tiên: 09/06/2026 (giờ UTC). Bài mới nhất: 02/10/2026. Tổng 189 bài trong 116 ngày, tức 1,6 bài/ngày. Tổng lượt xem 185 Reels: khoảng 10,8 triệu.</p>
+<div class="tw"><table>
+<tr><th>Nhóm bài (theo thời gian)</th><th>Giai đoạn</th><th>Lượt xem trung vị</th><th>Cao nhất</th></tr>
+<tr><td>1–21</td><td>9/6 – giữa tháng 6</td><td>2,9 N</td><td>7 N</td></tr>
+<tr><td>22–42</td><td>nửa cuối tháng 6</td><td>3,9 N</td><td>5,5 N</td></tr>
+<tr><td>43–63</td><td>cuối 6 – đầu 7</td><td>8,5 N</td><td>13,7 N</td></tr>
+<tr><td>64–84</td><td>đầu tháng 7</td><td>19,8 N</td><td>289 N</td></tr>
+<tr><td>85–105</td><td>giữa tháng 7</td><td>19,8 N</td><td>350 N</td></tr>
+<tr><td>106–126</td><td>cuối 7 – đầu 8</td><td>22,2 N</td><td>202 N</td></tr>
+<tr><td>127–147</td><td>tháng 8</td><td>30,5 N</td><td><b>1,6 Tr</b></td></tr>
+<tr><td>148–168</td><td>cuối 8 – giữa 9</td><td>31,6 N</td><td>117 N</td></tr>
+<tr><td>169–189</td><td>giữa 9 – 2/10</td><td>52,3 N</td><td><b>1,1 Tr</b></td></tr>
+</table></div>
+<p>Trung vị toàn kênh 19,8 nghìn. 27 Reels trên 100 nghìn, 2 Reels trên 1 triệu, 54 Reels dưới 10 nghìn.</p>
+<div class="grid2">
+<figure>
+  <div class="shot"><img src="img/04-1k-followers.jpg" alt="1k follower">
+    <div class="b" style="left:33.5%;top:79%;width:33.5%;height:13%"><i>A</i></div>
+    <div class="b" style="left:38.5%;top:49%;width:19%;height:24%"><i>B</i></div>
+  </div>
+  <figcaption><b>A</b> Cô ấy mất tài khoản cũ 33 nghìn follower và phải dựng lại từ đầu. <b>B</b> Mốc 1.032 follower sau một tháng.</figcaption>
+</figure>
+<figure>
+  <div class="shot"><img src="img/05-2k-followers.jpg" alt="2k follower">
+    <div class="b" style="left:35%;top:76.5%;width:31.5%;height:10%"><i>A</i></div>
+  </div>
+  <figcaption><b>A</b> Từ 1.032 lên 2.001 follower trong chưa đầy 24 giờ. Thời điểm này trùng với loạt bài GRWM đầu tháng 7.</figcaption>
+</figure>
+</div>
+<div class="box"><b>Điểm gãy.</b> Bài 63–73 (4–8/7) là lúc cô ấy chuyển sang video thử đồ một cảnh quay liền trong phòng thay đồ. Lượt xem trung vị của 9 bài nhắc "Cinematic Bot / AI Muse Alchemy" là 107–191 nghìn, trong khi 62 bài trước đó chưa bài nào vượt 14 nghìn.</div>
+
+<!-- ===================== 4 ===================== -->
+<h2 id="s4"><span class="n">4</span>Các tuyến nội dung và hiệu quả</h2>
+<p>Em phân loại tự động 185 Reels theo từ khoá trong caption, nên ranh giới giữa các nhóm chỉ gần đúng.</p>
+<div class="tw"><table>
+<tr><th>Tuyến</th><th>Số bài</th><th>Lượt xem trung vị</th><th>Cao nhất</th><th>Bài &gt;100 N</th><th>Bài &lt;10 N</th></tr>
+<tr><td>Trend (hair transition, challenge)</td><td>7</td><td><b>119 N</b></td><td>263 N</td><td>5</td><td>1</td></tr>
+<tr><td>GRWM</td><td>62</td><td>35,1 N</td><td>1,1 Tr</td><td>12</td><td>5</td></tr>
+<tr><td>Makeup</td><td>11</td><td>27,9 N</td><td>1,6 Tr</td><td>2</td><td>0</td></tr>
+<tr><td>Nấu ăn / mini vlog</td><td>13</td><td>18,8 N</td><td>32,8 N</td><td>0</td><td>3</td></tr>
+<tr><td>Outfit inspo</td><td>31</td><td>17,1 N</td><td>253 N</td><td>7</td><td>10</td></tr>
+<tr><td>Quảng cáo trả tiền (Temu)</td><td>3</td><td>17 N</td><td>18,7 N</td><td>0</td><td>0</td></tr>
+<tr><td>Khác (giới thiệu nhân vật, câu nói truyền cảm hứng, dạy realism; phần lớn là bài tháng 6)</td><td>53</td><td>6,4 N</td><td>156 N</td><td>1</td><td>34</td></tr>
+</table></div>
+<figure>
+  <div class="shot"><img src="img/03-reels-views.jpg" alt="Lượt xem Reels">
+    <div class="b" style="left:12.5%;top:44%;width:8%;height:4.2%"><i>227 N · trend nhảy</i></div>
+    <div class="b" style="left:31%;top:44%;width:8%;height:4.2%"><i>27,7 N · nấu ăn</i></div>
+    <div class="b" style="left:12.5%;top:84.7%;width:8%;height:4.2%"><i>263 N · tóc</i></div>
+    <div class="b" style="left:31%;top:84.7%;width:8%;height:4.2%"><i>30,3 N · hoá trang</i></div>
+  </div>
+  <figcaption>Cùng một tuần, cùng một nhân vật: bài trend và làm tóc đạt 227–263 nghìn, bài nấu ăn và hoá trang chỉ 27–30 nghìn.</figcaption>
+</figure>
+
+<!-- ===================== 5 ===================== -->
+<h2 id="s5"><span class="n">5</span>Mổ video từng giây + prompt viết ngược</h2>
+<p>Mỗi ảnh dưới đây là 12 khung cắt đều theo thời lượng video. Khung <b style="color:#e00000">viền đỏ</b> là khung ngay sau một lần cắt cảnh (phát hiện tự động bằng mức thay đổi hình ảnh). Em mổ được 9/10 video top; video hạng 9 (233 nghìn, Summer Outfit Inspo 6/7) không dựng được khung, nó cùng dạng với video hạng 8.</p>
+<p><span class="tag t-inf">Suy luận</span> Các prompt là bản em viết ngược từ hình, <b>chưa chạy thử</b>. @Image1 = ảnh nhân vật, @Image2 = ảnh flat-lay trang phục, @Image3 = ảnh bối cảnh.</p>
+
+<h3>Video 1 · 1,6 triệu view · Makeup cận mặt "Eyemaxxing" · 8,3 giây</h3>
+<figure><div class="shot"><img src="img/v01.jpg" alt="Video 1"></div>
+<figcaption>3 cảnh, cắt tại <b>3,05s</b> và <b>6,35s</b>. Cảnh 1: cận cực gần một mắt, bút kẻ vàng, chữ "eyemaxxing" giữa khung. Cảnh 2: đổi sang mắt bên kia, góc 3/4. Cảnh 3 (2 giây cuối): lùi ra chính diện, tóc đuôi ngựa, áo hồng, lộ kết quả.</figcaption></figure>
+<figure>
+  <div class="shot"><img src="img/06-reel-16m-page.jpg" alt="Trang video 1">
+    <div class="b" style="left:52.5%;top:5.5%;width:10%;height:4.5%"><i>A</i></div>
+    <div class="b" style="left:35%;top:31.5%;width:11.5%;height:4.8%"><i>B</i></div>
+    <div class="b" style="left:50.3%;top:42.5%;width:13.5%;height:4.8%"><i>C</i></div>
+  </div>
+  <figcaption><b>A</b> Nhạc có sẵn đang thịnh hành (Beyoncé, Diva). <b>B</b> Chữ trên hình chỉ một từ. <b>C</b> 44,3 nghìn thích, 122 bình luận, 658 lượt chia sẻ.</figcaption>
+</figure>
+<pre>[8 seconds][Beauty macro tutorial, vertical 9:16],[glam female, flawless realistic skin],[no dialogue, music added in edit],[soft daylight beauty lighting, visible skin texture and pores, shallow depth of field]
+
+Character: based on @Image1, same face, hoop earrings, long nails.
+
+[Shot 1, 0-3s: extreme macro of her right eye. Her hand holds a white pencil with a yellow tip and draws a sharp yellow winged liner along the lower lash line. She looks straight into the lens, steady.]
+[Shot 2, 3-6s: hard cut to a three-quarter angle of the other eye. Same pencil finishes the wing. Slight head tilt, lips relaxed.]
+[Shot 3, 6-8s: hard cut to a frontal medium close-up in a bright white bathroom. High sleek ponytail, pink halter top, finished yellow liner on both eyes. She holds eye contact, tiny confident smile.]</pre>
+
+<h3>Video 2 · 1,1 triệu view · Fall Looks · 15,9 giây</h3>
+<figure><div class="shot"><img src="img/v02.jpg" alt="Video 2"></div>
+<figcaption>7 cảnh, cắt tại <b>3,35 · 4,85 · 8,75 · 9,95 · 12,95 · 14,45s</b>. Buộc tóc trong đồ lót đen → cầm áo → đã mặc áo cổ lọ → kéo quần jean → mang bốt → <b>cận mặt tô son (3 giây)</b> → dáng toàn thân có túi → dáng cuối.</figcaption></figure>
+<pre>[15 seconds][Fashion GRWM, fast jump cuts, vertical 9:16],[glam female, sleek high bun],[no dialogue, music added in edit],[bright white luxury walk-in closet, crystal chandelier, warm shelf lighting]
+
+Character: based on @Image1. Outfit pieces from @Image2 (black turtleneck bodysuit, blue jeans, dark knee-high boots, black chain bag). Location from @Image3.
+
+[Shot 1, 0-3s: medium shot, she stands in a black tank and shorts, ties her hair up into a bun, looking at camera.]
+[Shot 2, 3-5s: jump cut, she holds up the black turtleneck, then it is on.]
+[Shot 3, 5-9s: jump cut, she pulls the jeans up and fastens them, then bends to zip the boots.]
+[Shot 4, 9-13s: jump cut to extreme close-up of her face applying nude lipstick, presses lips together, looks into lens.]
+[Shot 5, 13-16s: jump cut to full-body pose with the bag on her shoulder, one hand in pocket, slight turn, holds the pose.]</pre>
+
+<h3>Video 3 · 350 nghìn view · "GRWM in one click" · 10,1 giây</h3>
+<figure><div class="shot"><img src="img/v03.jpg" alt="Video 3"></div>
+<figcaption><b>Không cắt cảnh nào.</b> Máy đặt cố định, toàn thân. Bắt đầu với áo quây và quần đen, mặc quần trắng, buộc áo yếm khăn lụa, mang dép, cầm túi, tạo dáng. Chữ "SUMMER OUTFIT INSPO" chỉ hiện trong 3 giây đầu.</figcaption></figure>
+
+<h3>Video 4 · 347 nghìn view · GRWM váy vàng · 13,6 giây</h3>
+<figure><div class="shot"><img src="img/v04.jpg" alt="Video 4"></div>
+<figcaption>Một cảnh liền. Giây 0: cầm váy bên người. Giây 2: chui váy qua đầu. Giây 4–8: chỉnh nơ, vuốt váy. Giây 9–10: cúi mang giày. Giây 11–13: đứng thẳng, tay chống hông.</figcaption></figure>
+
+<h3>Video 5 · 303 nghìn view · GRWM chấm bi trắng · 14,3 giây</h3>
+<figure><div class="shot"><img src="img/v05.jpg" alt="Video 5"></div>
+<figcaption>Một cảnh liền. Chi tiết đáng chú ý: <b>bộ đồ treo sẵn trên móc ở mép trái khung hình</b> ngay từ giây đầu, nên người xem biết trước cô ấy sẽ mặc gì.</figcaption></figure>
+
+<h3>Video 6 · 289 nghìn view · GRWM chấm bi đen · 14,0 giây</h3>
+<figure><div class="shot"><img src="img/v06.jpg" alt="Video 6"></div>
+<figcaption>Cùng khuôn với video 5, đổi màu đồ và bối cảnh (phòng khách ánh vàng). Đây là bằng chứng cô ấy <b>nhân bản một khuôn thắng</b> chứ không nghĩ ý tưởng mới.</figcaption></figure>
+
+<h3>Video 8 · 253 nghìn view · Summer Outfit Inspo váy hồng cam · 13,4 giây</h3>
+<figure><div class="shot"><img src="img/v08.jpg" alt="Video 8"></div>
+<figcaption>Một cảnh liền. Quấn váy, thắt dây, <b>dành gần 5 giây (giây 4–9) cúi buộc dây giày</b>, rồi đứng lên tạo dáng.</figcaption></figure>
+
+<div class="box"><b>Khuôn "một cảnh liền" (video 3, 4, 5, 6, 8).</b> Đây là công thức tạo ra cú bùng nổ tháng 7.
+<ul>
+<li>Máy cố định, toàn thân, ngang tầm ngực, không chuyển động máy.</li>
+<li>Nhân vật bắt đầu trong lớp đồ lót tối màu (áo quây + quần ngắn).</li>
+<li>Mặc lần lượt: quần/váy → áo → giày (cúi xuống) → túi → dáng cuối.</li>
+<li>10–14 giây, vừa một lần tạo Seedance (tối đa 15 giây).</li>
+<li>Chữ tiêu đề nhỏ ở 3 giây đầu rồi biến mất.</li>
+</ul></div>
+<pre>[14 seconds][One-take GRWM try-on, locked-off tripod, vertical 9:16],[glam female, sleek ponytail],[no dialogue, music added in edit],[bright luxury walk-in closet, soft daylight from skylight, realistic fabric physics]
+
+Character: based on @Image1. She wears ONLY the outfit shown in @Image2 by the end. Location from @Image3. The outfit hangs on a hanger at the left edge of frame at the start.
+
+[Single continuous shot, full body, camera does not move, natural real-time speed slightly quick.
+0-2s: she stands in a black bandeau top and black shorts, takes the bottoms off the hanger.
+2-5s: steps into the bottoms and pulls them up, adjusts the waist.
+5-8s: puts on the top, ties the straps behind her neck, smooths the fabric.
+8-11s: bends down and fastens the heels, one foot then the other.
+11-14s: stands tall, picks up the handbag, one hand on hip, slight turn, looks into the lens and holds the pose.]</pre>
+
+<h3>Video 7 · 263 nghìn view · Biến đổi tóc · 29,0 giây</h3>
+<figure><div class="shot"><img src="img/v07.jpg" alt="Video 7"></div>
+<figcaption>Khoảng 28 lần cắt, tức <b>mỗi 0,5–1 giây một cú jump cut</b>. Tóc ướt, xoa dầu → xịt → sấy bung → kéo tóc lên → cuốn lô → quay lưng → tháo lô → xoã tóc bồng → hất tóc. 29 giây là 2 lần tạo 15 giây ghép lại <span class="tag t-inf">Suy luận</span>.</figcaption></figure>
+<pre>[15 seconds, part 1 of 2][Hair routine, rapid jump cuts every 0.7 seconds, vertical 9:16],[glam female, pink corset top, pearl jewelry],[no dialogue, original ambient sound],[white marble bathroom, pendant lights, bright even lighting]
+
+Character: based on @Image1.
+
+[Medium close-up, camera locked. Rapid jump cuts, same framing:
+wet long black hair, she rubs pink product between her palms / sprays a white bottle into her hair / hair half-dried and voluminous, she shakes it / she lifts all her hair straight up / large pink velcro rollers going in one by one / all rollers in, she turns her back to camera showing the corset lacing.]
+
+[Part 2, 15 seconds: same framing. Rollers come out one by one in jump cuts / huge glossy bouncy blowout falls around her face / she flips the hair side to side in slow motion / final frame: over-the-shoulder smile into the lens.]</pre>
+
+<h3>Video 10 · 227 nghìn view · Trend nhảy hai nhân vật · 28,0 giây</h3>
+<figure><div class="shot"><img src="img/v10.jpg" alt="Video 10"></div>
+<figcaption>Cắt tại <b>2,55 · 10,55 · 14,05 · 18,05 · 21,55 · 24,55s</b>. Luân phiên toàn thân và trung cảnh. Phông cam trơn, sàn vàng, micro treo. Hai nhân vật AI (nam và nữ) nhảy đồng bộ theo một trend có sẵn.</figcaption></figure>
+
+<h3>Chuyển cảnh che ống kính · 9 giây · 156 nghìn view</h3>
+<p>Em đã tua khung ở lượt trước: giây 0–4 tóc buộc gọn, mặt mộc hơn; giây 4,5 bàn tay đưa lên che kín ống kính; giây 5–9 tóc bồng, trang điểm đậm. <span class="tag t-inf">Suy luận</span> Hai clip ngắn ghép tại khung bị che.</p>
+
+<!-- ===================== 6 ===================== -->
+<h2 id="s6"><span class="n">6</span>Bài thất bại</h2>
+<figure><div class="shot"><img src="img/fail-falllooks.jpg" alt="Fall Looks thất bại"></div>
+<figcaption>Fall Looks đăng <b>một ngày sau</b> bài 1,1 triệu, cùng phòng, cùng bài nhạc, cùng caption: chỉ đạt <b>20 nghìn</b>.</figcaption></figure>
+<div class="tw"><table>
+<tr><th></th><th>Bài 1,1 triệu (12/9)</th><th>Bài 20 nghìn (13/9)</th></tr>
+<tr><td>Độ dài</td><td>15,9 giây</td><td>20,7 giây</td></tr>
+<tr><td>Lần cắt đầu tiên</td><td>giây 3,35</td><td>giây 7,55</td></tr>
+<tr><td>Màu trang phục</td><td>Đen + jean xanh, tương phản mạnh với phòng trắng</td><td>Be + trắng kem, chìm vào nền</td></tr>
+<tr><td>Tóc</td><td>Búi gọn, lộ rõ mặt</td><td>Xoã dài</td></tr>
+<tr><td>Nhạc, caption, bối cảnh</td><td colspan="2">Giống nhau</td></tr>
+</table></div>
+<p><span class="tag t-inf">Suy luận</span> Ba khác biệt có thể giải thích một phần: mở đầu chậm hơn 4 giây, video dài hơn, màu đồ kém tương phản. Nhưng em không chứng minh được nguyên nhân. Điều chắc chắn hơn là <b>cùng một khuôn cho kết quả lệch nhau 50 lần</b>, nên cô ấy thắng nhờ đăng nhiều biến thể chứ không nhờ đoán trúng từng bài.</p>
+<h3>Các kiểu bài luôn thấp</h3>
+<ul>
+<li><b>53 bài nhóm "Khác"</b>, trung vị 6,4 nghìn, 34 bài dưới 10 nghìn: giới thiệu nhân vật ("Meet Zara"), câu nói truyền cảm hứng, "POV: AI made you a celebrity", "Type 222 to learn".</li>
+<li><b>7 bài CTA "comment FREE"</b> (bài 15–50): trung vị 3,8 nghìn.</li>
+<li><b>3 bài nhân vật nói chuyện</b> (talking, bài 45–47): trung vị 5,5 nghìn.</li>
+<li><b>Sau điểm gãy vẫn thấp:</b> giới thiệu nhân vật (8–13 nghìn), quảng cáo Temu (12 nghìn), mini vlog pizza (14,8 nghìn), "splash try on" (12,7 nghìn).</li>
+</ul>
+
+<!-- ===================== 7 ===================== -->
+<h2 id="s7"><span class="n">7</span>Công cụ và tính năng họ chọn</h2>
+<figure>
+  <div class="shot"><img src="img/t08-how-i-create.jpg" alt="Cách tạo">
+    <div class="b" style="left:32%;top:56.5%;width:35.5%;height:27.5%"><i>A</i></div>
+  </div>
+  <figcaption><b>A</b> Lời cô ấy: mọi video (GRWM, vlog, thời trang, makeup, nấu ăn) đều dùng "AI muse Seedance 2.0 prompt director bot(s)" để viết prompt, từ ý tưởng ra nội dung trong 5 phút.</figcaption>
+</figure>
+<div class="tw"><table>
+<tr><th>Lớp</th><th>Công cụ / tính năng</th><th>Vì sao tạo ra chất lượng</th><th>Độ tin cậy</th></tr>
+<tr><td>Mô hình video</td><td>Seedance 2.0, sau đó 2.5</td><td>Giữ được khuôn mặt qua nhiều cảnh, vải và tóc chuyển động thật, cho phép nhiều ảnh tham chiếu, một lần tạo tới 15 giây</td><td><span class="tag t-ok">Xác nhận</span> tên mô hình</td></tr>
+<tr><td>Đầu vào</td><td>"One image. One prompt." Một ảnh nhân vật + một prompt</td><td>Không cần tạo ảnh nhân vật mặc từng bộ trước</td><td><span class="tag t-ok">Xác nhận</span> (caption bài 88, bình luận ghim)</td></tr>
+<tr><td>Viết prompt</td><td>Custom GPT chia theo khuôn: fashion try-on, splash try-on, split try-on, cinematic, GRWM, luxury, lifestyle</td><td>Mỗi khuôn có sẵn dáng mở, chuyển cảnh, thời lượng; người dùng chỉ điền ý tưởng</td><td><span class="tag t-ok">Xác nhận</span></td></tr>
+<tr><td>Trang phục</td><td>Wardrobe Atelier Bot: ảnh đồ bất kỳ → ảnh flat-lay ghép</td><td>Tách riêng giày, phụ kiện, chất liệu để mô hình giữ đúng chi tiết</td><td><span class="tag t-ok">Xác nhận</span></td></tr>
+<tr><td>Nhân vật</td><td>"AICA master prompt" + một ảnh cảm hứng lấy từ Instagram</td><td>Da có lỗ chân lông, tàn nhang, ánh sáng tự nhiên; ra avatar trong 2 phút</td><td><span class="tag t-ok">Xác nhận</span> quy trình, <span class="tag t-unk">Chưa biết</span> công cụ tạo ảnh</td></tr>
+<tr><td>Nền tảng chạy Seedance</td><td>Một kênh cùng ngách (Kaia Marin) ghi "higgsfield creative partner"</td><td></td><td><span class="tag t-inf">Suy luận</span> Zara có thể cũng dùng Higgsfield, chưa có bằng chứng trực tiếp</td></tr>
+<tr><td>Hậu kỳ</td><td>Chữ tiêu đề nhỏ + nhạc của Instagram</td><td>Gần như không dựng; "No editing" là lời cô ấy quảng cáo</td><td><span class="tag t-ok">Xác nhận</span></td></tr>
+</table></div>
+
+<div class="grid2">
+<figure>
+  <div class="shot"><img src="img/t01-dual-workflow.jpg" alt="Dual workflow">
+    <div class="b" style="left:36.5%;top:49%;width:12.5%;height:25.5%"><i>A</i></div>
+  </div>
+  <figcaption><b>A</b> Hai bot chạy nối tiếp: Wardrobe Atelier (ảnh đồ → flat-lay) rồi Styling Director (mặc đồ ngay trong video). Quảng cáo là "ít tốn credit hơn".</figcaption>
+</figure>
+<figure>
+  <div class="shot"><img src="img/t03-wardrobe-bot.jpg" alt="Wardrobe bot">
+    <div class="b" style="left:32.5%;top:37%;width:19%;height:29%"><i>A</i></div>
+  </div>
+  <figcaption><b>A</b> Tải lên ảnh đồ từ Pinterest, web, ảnh chụp màn hình. Bot giữ nguyên giày, phụ kiện, chi tiết, chất liệu.</figcaption>
+</figure>
+<figure>
+  <div class="shot"><img src="img/t04-single-tryon.jpg" alt="Single try-on">
+    <div class="b" style="left:44.5%;top:29%;width:23.5%;height:33%"><i>A</i></div>
+  </div>
+  <figcaption><b>A</b> Khuôn Single Try-On: 01 Get dressed → 02 Reveal → 03 Final pose. Đúng với cấu trúc video 3–8 ở phần 5.</figcaption>
+</figure>
+<figure>
+  <div class="shot"><img src="img/t05-split-view.jpg" alt="Split view">
+    <div class="b" style="left:45.5%;top:26.5%;width:22.5%;height:47%"><i>A</i></div>
+    <div class="b" style="left:32.5%;top:52%;width:12%;height:12.5%"><i>B</i></div>
+  </div>
+  <figcaption><b>A</b> Khuôn Split View: hai bộ đồ, cùng ánh sáng, cùng câu chuyện. <b>B</b> Bot viết luôn dáng mở, khoảnh khắc soi gương, chuyển cảnh, chữ trên hình.</figcaption>
+</figure>
+<figure>
+  <div class="shot"><img src="img/t06-transitions.jpg" alt="Transitions">
+    <div class="b" style="left:32.5%;top:34%;width:12.5%;height:16%"><i>A</i></div>
+  </div>
+  <figcaption><b>A</b> Khuôn Outfit Transitions: 2–4 bộ, chuyển bằng xoay người, hất áo khoác, bước qua cửa, quẹt ống kính.</figcaption>
+</figure>
+<figure>
+  <div class="shot"><img src="img/t07-one-click-outfit.jpg" alt="One click outfit">
+    <div class="b" style="left:31.5%;top:8%;width:15%;height:27%"><i>A</i></div>
+    <div class="b" style="left:44.5%;top:38%;width:23.5%;height:57%"><i>B</i></div>
+  </div>
+  <figcaption><b>A</b> Đầu vào: ảnh sản phẩm thật của Fashion Nova. <b>B</b> Đầu ra: nhân vật mặc đúng bộ đó. Người xem mua qua cửa hàng affiliate.</figcaption>
+</figure>
+<figure>
+  <div class="shot"><img src="img/t09-seedance25.jpg" alt="Seedance 2.5">
+    <div class="b" style="left:31.5%;top:12%;width:24%;height:26%"><i>A</i></div>
+    <div class="b" style="left:44.5%;top:40.5%;width:23%;height:36%"><i>B</i></div>
+  </div>
+  <figcaption><b>A</b> Bot đã lên Seedance 2.5. <b>B</b> Danh sách khuôn: video động mạnh, try-on, vlog, video nói, cinematic, UGC sản phẩm, chuyển cảnh năng lượng cao.</figcaption>
+</figure>
+<figure>
+  <div class="shot"><img src="img/t10-aica-master-prompt.jpg" alt="AICA master prompt">
+    <div class="b" style="left:33%;top:30%;width:35%;height:53%"><i>A</i></div>
+  </div>
+  <figcaption><b>A</b> Cách tạo nhân vật: một ảnh cảm hứng + "AICA master prompt" (nội dung prompt bị làm mờ) → avatar mới. Lưu ý: dựng nhân vật từ ảnh của người thật trên mạng có rủi ro về quyền hình ảnh; nên dùng ảnh gốc của mình như Uyên Linh.</figcaption>
+</figure>
+</div>
+
+<h3>Những lựa chọn tạo ra cảm giác "thật"</h3>
+<ul>
+<li><b>Khung cố định, toàn thân, một cảnh liền.</b> Không cắt nên người xem không nghi là ghép; mô hình cũng ít lỗi hơn khi máy đứng yên.</li>
+<li><b>Lớp đồ lót tối màu ở khung đầu.</b> Mô hình có điểm bắt đầu rõ để "mặc" từng món.</li>
+<li><b>Bộ đồ nằm sẵn trong khung</b> (treo móc hoặc cầm tay) trước khi mặc.</li>
+<li><b>Hành động với đồ vật nhỏ:</b> buộc dây, cài khuy, cúi mang giày, tô son. Đây là chi tiết khiến video giống người quay thật.</li>
+<li><b>Cận mặt có khuyết điểm da</b> (lỗ chân lông, nốt ruồi) ở video makeup.</li>
+<li><b>Bối cảnh sáng, trắng, nhiều kệ thẳng.</b> Nền đơn giản giúp trang phục nổi và che lỗi nền.</li>
+<li><b>Nhân vật đổi diện mạo một lần:</b> tháng 7–8 dùng một khuôn mặt, từ tháng 9 dùng khuôn mặt sắc nét hơn. Kênh vẫn tăng, nên người xem theo khuôn nội dung nhiều hơn theo đúng một gương mặt <span class="tag t-inf">Suy luận</span>.</li>
+</ul>
+
+<!-- ===================== 8 ===================== -->
+<h2 id="s8"><span class="n">8</span>Caption, CTA, hashtag, giờ đăng, âm thanh</h2>
+<figure>
+  <div class="shot"><img src="img/08-reel-caption-cta.jpg" alt="Caption">
+    <div class="b" style="left:52.5%;top:5.3%;width:10%;height:3.8%"><i>A</i></div>
+    <div class="b" style="left:52.5%;top:28.8%;width:16%;height:5%"><i>B</i></div>
+    <div class="b" style="left:52.5%;top:33.5%;width:14.5%;height:4.5%"><i>C</i></div>
+  </div>
+  <figcaption><b>A</b> Nhãn "Nội dung do AI tạo" + "Âm thanh gốc". <b>B</b> CTA cố định: "Want to learn how I create this? Message me 222". <b>C</b> Đúng 5 hashtag.</figcaption>
+</figure>
+<h3>CTA qua 4 đời</h3>
+<div class="tw"><table>
+<tr><th>Giai đoạn</th><th>CTA</th><th>Số bài</th><th>Lượt xem trung vị</th></tr>
+<tr><td>Bài 15–50 (tháng 6)</td><td>Comment "FREE"</td><td>7</td><td>3,8 N</td></tr>
+<tr><td>Bài 15–141</td><td>"Comment 222"</td><td>41 bài có chữ "comment"</td><td>16,6 N</td></tr>
+<tr><td>Bài 63–73 (đầu tháng 7)</td><td>Nêu tên sản phẩm trong caption và bình luận ghim</td><td>9</td><td>107 N</td></tr>
+<tr><td>Bài 62–189</td><td>"Message me 222"</td><td>63</td><td>29,2 N</td></tr>
+</table></div>
+<p>Từ "222" xuất hiện trong 125/189 bài. Caption dài trung vị 444 ký tự.</p>
+<h3>Hashtag</h3>
+<div class="tw"><table>
+<tr><th>Hashtag</th><th>Số bài</th><th>Lượt xem trung vị</th></tr>
+<tr><td>#aiinfluencer</td><td>123</td><td>28 N</td></tr>
+<tr><td>#aicreator</td><td>68</td><td>36 N</td></tr>
+<tr><td>#outfitinspo</td><td>63</td><td>36 N</td></tr>
+<tr><td>#fyp, #ootd</td><td>48 mỗi cái</td><td>35 N</td></tr>
+<tr><td>#grwm</td><td>36</td><td>36 N</td></tr>
+<tr><td>#aigirl</td><td>32</td><td>37 N</td></tr>
+<tr><td>#reels / #viral / #explore</td><td>25 / 14 / 8</td><td>12 N / 8 N / 11 N</td></tr>
+<tr><td>#aicontent, #hairtransition</td><td>10 / 6</td><td>103 N / 119 N</td></tr>
+</table></div>
+<p><span class="tag t-inf">Suy luận</span> Hashtag chung chung (#reels, #viral, #explore) gắn với bài yếu, nhưng chúng chủ yếu được dùng trong tháng 6 khi kênh còn nhỏ, nên không kết luận được hashtag là nguyên nhân.</p>
+<h3>Giờ đăng</h3>
+<ul>
+<li>Em tính giờ đăng từ mã bài viết (mã Instagram chứa dấu thời gian) cho cả 189 bài.</li>
+<li>110/189 bài đăng trong khung <b>2h–7h UTC</b>, tức 9h–14h giờ Việt Nam. Trung vị lượt xem khung này 22–29 nghìn.</li>
+<li>Các bài đăng 13h–20h UTC có trung vị chỉ 3–4 nghìn, nhưng phần lớn là bài tháng 6. <span class="tag t-inf">Suy luận</span> Không tách được ảnh hưởng của giờ đăng khỏi ảnh hưởng của giai đoạn.</li>
+<li>Theo thứ: Chủ nhật cao nhất (trung vị 33 nghìn), thứ Ba thấp nhất (10 nghìn).</li>
+</ul>
+<h3>Âm thanh và gắn vị trí</h3>
+<div class="tw"><table>
+<tr><th>Video</th><th>Âm thanh</th><th>Vị trí gắn</th></tr>
+<tr><td>1,6 Tr · makeup</td><td>Beyoncé – Diva</td><td></td></tr>
+<tr><td>1,1 Tr · Fall Looks</td><td>Lloyd – You (feat. Lil Wayne)</td><td></td></tr>
+<tr><td>20 N · Fall Looks thất bại</td><td>Lloyd – You (cùng bài)</td><td></td></tr>
+<tr><td>303 N · GRWM</td><td>Wizkid – Essence</td><td></td></tr>
+<tr><td>233 N · Outfit</td><td>Wizkid – Come Closer</td><td></td></tr>
+<tr><td>350 N, 347 N, 289 N, 253 N</td><td>không ghi tên bài nhạc</td><td>New York City · USA · Los Angeles · Hoa Kỳ</td></tr>
+<tr><td>263 N, 227 N, 156 N (trend)</td><td>Âm thanh gốc</td><td></td></tr>
+</table></div>
+<p><span class="tag t-ok">Xác nhận</span> Cô ấy gắn vị trí ở Mỹ cho các bài GRWM tháng 7. <span class="tag t-inf">Suy luận</span> Mục đích là kéo phân phối về khán giả Mỹ.</p>
+<h3>Tỉ lệ tương tác</h3>
+<ul>
+<li>Lượt thích bằng 1,72% lượt xem (trung vị). Bình luận bằng 0,07% lượt xem.</li>
+<li>Bài 1,1 triệu: 56,3 nghìn thích, 206 bình luận, 1,2 nghìn chia sẻ. Bài 1,6 triệu: 44,3 nghìn thích, 122 bình luận, 658 chia sẻ.</li>
+<li><span class="tag t-unk">Chưa biết</span> Lượt lưu (Instagram không hiện công khai).</li>
+</ul>
+
+<!-- ===================== 9 ===================== -->
+<h2 id="s9"><span class="n">9</span>Khán giả quan tâm điều gì</h2>
+<figure>
+  <div class="shot"><img src="img/a01-where-to-buy.jpg" alt="Hỏi mua đồ">
+    <div class="b" style="left:31%;top:14.5%;width:37.5%;height:75%"><i>A</i></div>
+  </div>
+  <figcaption><b>A</b> Cô ấy tự ghép các bình luận và tin nhắn hỏi: "Where is your outfit from?", "Where do you get your leggings?", "Where can we get this dress?". Tên người hỏi đã được cô ấy che.</figcaption>
+</figure>
+<p>Em đọc phần bình luận có chữ trên 5 bài nhiều tương tác. Xếp theo mức độ lặp lại:</p>
+<div class="tw"><table>
+<tr><th>Điều họ nói</th><th>Ví dụ</th><th>Ý nghĩa</th></tr>
+<tr><td><b>1. Khen ngoại hình</b> (nhiều nhất)</td><td>"Gorgeous", "She looks so flawless", "Facecard", "Que mulher linda"</td><td>Phần đông xem để ngắm, không có ý định mua khoá học</td></tr>
+<tr><td><b>2. Hỏi mua đồ</b></td><td>"Quiero esas botas", "Love your outfit", "Thats my style"</td><td>Nhu cầu thật là thời trang → affiliate quần áo</td></tr>
+<tr><td><b>3. Ngạc nhiên vì là AI</b></td><td>"I know this is ai but she slays", "Ai influencer worlds gone mad but she's beautiful", "Ugh to be as beautiful as this ai"</td><td>Nhãn AI là cái móc gây tò mò, không làm mất thiện cảm</td></tr>
+<tr><td><b>4. Muốn học</b></td><td>"Hi I want to learn", hàng loạt bình luận chỉ ghi "222"</td><td>Nhóm nhỏ nhưng là người mua. Bài 350 nghìn có phần bình luận gần như toàn "222"</td></tr>
+<tr><td><b>5. Phản đối</b> (hiếm)</td><td>Một bình luận tôn giáo chê nội dung uống rượu</td><td>Không đáng kể</td></tr>
+</table></div>
+<ul>
+<li><span class="tag t-ok">Xác nhận</span> Người bình luận nói tiếng Anh, Nga, Bồ Đào Nha, Tây Ban Nha.</li>
+<li><span class="tag t-ok">Xác nhận</span> Nhiều tài khoản bình luận là kênh cùng ngách ("faceless…", "…aibaddie", "digitalrevenue…").</li>
+<li><span class="tag t-ok">Xác nhận</span> Cô ấy có trả lời: gần như mỗi bình luận ở bài 1,1 triệu đều có 1 phản hồi, và cô ấy ghim bình luận nêu công cụ ở các bài tháng 7.</li>
+<li><span class="tag t-unk">Chưa biết</span> Nội dung tin nhắn riêng và câu hỏi của người đã nhắn "222".</li>
+</ul>
+<div class="box"><b>Kết luận về khán giả.</b> Có hai tệp chồng lên nhau: tệp lớn thích thời trang và làm đẹp (tạo lượt xem), tệp nhỏ muốn tự làm AI influencer để kiếm tiền (tạo doanh thu). Video phục vụ tệp lớn, caption phục vụ tệp nhỏ.</div>
+
+<!-- ===================== 10 ===================== -->
+<h2 id="s10"><span class="n">10</span>So với cả ngách</h2>
+<figure>
+  <div class="shot"><img src="img/n01-madikobru.jpg" alt="Madi Kobru">
+    <div class="b" style="left:38%;top:18%;width:30%;height:13.5%"><i>A</i></div>
+    <div class="b" style="left:38%;top:32%;width:19%;height:5%"><i>B</i></div>
+  </div>
+  <figcaption><b>A</b> Madi Kobru là người sáng lập ACL và AICA, ghi 10 nghìn thành viên, cộng đồng Skool giá 9 USD/tháng. <b>B</b> Zara theo dõi kênh này.</figcaption>
+</figure>
+<div class="tw"><table>
+<tr><th>Kênh</th><th>Bài</th><th>Follower</th><th>Bán gì</th><th>Lượt xem 12–15 Reels gần nhất</th></tr>
+<tr><td><b>iamfacelesszara</b></td><td>189</td><td>47,8 N</td><td>Affiliate khoá học + mentorship + affiliate quần áo</td><td>24 N – 263 N</td></tr>
+<tr><td>itsmadikobru (chủ khoá học)</td><td>389</td><td>34,4 N</td><td>Cộng đồng Skool 9 USD/tháng + AICA</td><td>4 N – 73 N, một bài 380 N</td></tr>
+<tr><td>aiugc.creator</td><td>235</td><td>44,1 N</td><td>Reels làm đẹp AI + dịch vụ UGC cho brand</td><td>5 N – 231 N, hai bài 1–1,2 Tr</td></tr>
+<tr><td>kaiamarinn</td><td>34</td><td>12,8 N</td><td>Hợp tác brand; "higgsfield creative partner"</td><td>4 N – 606 N, một bài 1 Tr</td></tr>
+<tr><td>shygirlmoney.ai</td><td>93</td><td>4 N</td><td>Sản phẩm số (stan.store), ghi 4,9 nghìn học viên</td><td>1 N – 8 N</td></tr>
+</table></div>
+<h3>Cái gì là công thức chung của ngách</h3>
+<ul>
+<li>Tất cả đều gắn nhãn AI công khai.</li>
+<li>Nhân vật nữ, nội dung làm đẹp và thời trang cận mặt.</li>
+<li>Bán kiến thức (khoá học, cộng đồng) hoặc dịch vụ UGC cho brand.</li>
+<li>Lượt xem rất lệch: đa số bài vài nghìn tới vài chục nghìn, thỉnh thoảng một bài triệu view.</li>
+</ul>
+<h3>Cái gì là riêng của Zara</h3>
+<ul>
+<li>Follower cao nhất nhóm dù kênh mới nhất, và cao hơn cả người chủ khoá học mà cô ấy bán.</li>
+<li>Khuôn thử đồ một cảnh liền trong phòng thay đồ, lặp lại hàng chục lần.</li>
+<li>Bán đồng thời ba thứ: khoá của người khác, mentorship của mình, quần áo.</li>
+</ul>
+<p><span class="tag t-inf">Suy luận</span> Kaia Marin chỉ có 34 bài mà nhiều bài 500 nghìn tới 1 triệu. Kênh này đáng teardown tiếp theo vì hiệu suất mỗi bài cao hơn Zara nhiều.</p>
+
+<!-- ===================== 11 ===================== -->
+<h2 id="s11"><span class="n">11</span>TikTok và Threads</h2>
+<figure>
+  <div class="shot"><img src="img/n02-tiktok.jpg" alt="TikTok">
+    <div class="b" style="left:36.5%;top:8%;width:30%;height:5%"><i>A</i></div>
+    <div class="b" style="left:36.5%;top:19.5%;width:35%;height:5%"><i>B</i></div>
+    <div class="b" style="left:21%;top:65.5%;width:76.5%;height:5%"><i>C</i></div>
+  </div>
+  <figcaption><b>A</b> TikTok @facelessbyzara: 8.446 follower, 34,6 nghìn lượt thích. <b>B</b> Bio dẫn ngược về Instagram ("Message my instagram"). <b>C</b> Ba video ghim 26–187 nghìn, còn lại chỉ 500–2.500 lượt xem.</figcaption>
+</figure>
+<ul>
+<li><span class="tag t-ok">Xác nhận</span> TikTok là kênh phụ, yếu hơn Instagram khoảng 5–20 lần mỗi video.</li>
+<li><span class="tag t-ok">Xác nhận</span> Threads: 116 follower, bài cuối 31/7. Bio dùng từ khoá khác ("PM 'READY' to start"). Kênh này đã bỏ.</li>
+<li>Bài học: cô ấy dồn toàn lực vào một nền tảng.</li>
+</ul>
+
+<!-- ===================== 12 ===================== -->
+<h2 id="s12"><span class="n">12</span>Ba việc chưa làm được</h2>
+<div class="tw"><table>
+<tr><th>Việc</th><th>Tình trạng</th><th>Cần gì</th></tr>
+<tr><td><b>Tái tạo 2 video triệu view bằng Uyên Linh trên Topview</b></td><td>Chưa làm. Prompt viết ngược đã sẵn ở phần 5</td><td>Anh xác nhận ảnh Uyên Linh nào làm tham chiếu và cho em chạy Seedance. Sau khi chạy mới biết tốn bao nhiêu credit, mất bao lâu, lỗi ở đâu</td></tr>
+<tr><td><b>Nhắn "222" để đi hết phễu</b></td><td>Chưa làm</td><td>Đây là gửi tin nhắn từ tài khoản của anh tới đối thủ, nên em cần anh nói rõ "được nhắn" hoặc anh tự nhắn rồi em đọc phản hồi</td></tr>
+<tr><td><b>Mua bộ bot 67 USD để xem prompt thật</b></td><td>Chưa làm</td><td>Anh phải tự mua. Sau đó em đọc và so với prompt viết ngược</td></tr>
+</table></div>
+<p><span class="tag t-unk">Chưa biết</span> thêm: nội dung prompt trong bot, công cụ tạo ảnh nhân vật, doanh thu, lượt lưu, kịch bản DM, video hạng 9.</p>
+
+<!-- ===================== 13 ===================== -->
+<h2 id="s13"><span class="n">13</span>Kết luận và việc anh cần quyết</h2>
+<h3>Năm điều rút ra</h3>
+<ol>
+<li><b>Khuôn thắng đơn giản hơn tưởng tượng:</b> một cảnh quay liền 10–14 giây, máy cố định, nhân vật mặc một bộ đồ thật.</li>
+<li><b>Thắng nhờ số lượng biến thể:</b> cùng khuôn, cùng nhạc, kết quả lệch 50 lần. Phải đăng 1–2 bài mỗi ngày.</li>
+<li><b>Video không bán hàng, caption mới bán:</b> hình ảnh phục vụ người thích thời trang, chữ phục vụ người muốn học.</li>
+<li><b>Nội dung dạy học không kéo được kênh mới:</b> 60 bài đầu thất bại vì lý do này.</li>
+<li><b>Không cần sở hữu sản phẩm để bắt đầu,</b> nhưng anh có lợi thế vì đã có sản phẩm riêng.</li>
+</ol>
+<h3>Thứ tự thử cho Uyên Linh</h3>
+<div class="tw"><table>
+<tr><th>Ưu tiên</th><th>Khuôn</th><th>Độ dài</th><th>Lý do</th></tr>
+<tr><td>1</td><td>Thử đồ một cảnh liền trong phòng thay đồ</td><td>12–14s</td><td>5 trong 10 video top; chỉ cần một lần tạo</td></tr>
+<tr><td>2</td><td>Makeup cận mặt 3 cảnh</td><td>8s</td><td>Video cao nhất kênh; hợp với ưu tiên cận mặt trong công thức prompt của anh</td></tr>
+<tr><td>3</td><td>Outfit nhiều cú cắt + cận mặt tô son</td><td>15s</td><td>Video 1,1 triệu</td></tr>
+<tr><td>4</td><td>Chuyển cảnh che ống kính</td><td>9s</td><td>Rẻ, trung vị nhóm trend 119 nghìn</td></tr>
+<tr><td>5</td><td>Biến đổi tóc jump cut</td><td>2 × 15s</td><td>Mạnh nhưng tốn gấp đôi</td></tr>
+<tr><td>Bỏ</td><td>Nấu ăn, nhân vật nói chuyện, bài giới thiệu nhân vật, câu nói truyền cảm hứng</td><td></td><td>Luôn thấp</td></tr>
+</table></div>
+<h3>Anh cần quyết</h3>
+<ol>
+<li>Kênh chạy trên nền tảng nào (tài khoản Facebook cá nhân đang bị đình chỉ).</li>
+<li>Uyên Linh có nối công khai với KOL AI SYSTEM không.</li>
+<li>Từ khoá nhắn tin dùng chung cho mọi bài.</li>
+<li>Có cho em chạy thử tái tạo trên Topview và nhắn "222" không.</li>
+</ol>
+
+</main>
+</body>
+</html>
