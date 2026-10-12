@@ -2,7 +2,7 @@
 
 Đây là "bộ nhớ" của skill: ví dụ đã làm thật, những gì tìm ra, và những chỗ vấp. Đọc trước khi làm một kênh mới để khỏi vấp lại và biết một báo cáo tốt trông thế nào.
 
-Bản đầy đủ: `D:\XÂY AI AGENT\teardown-zara\bao-cao-teardown-zara.html` (có ảnh) và `D:\XÂY AI AGENT\teardown-iamfacelesszara.md` (chữ).
+Bản đầy đủ: `vi-du/zara/bao-cao-teardown-zara.html` (có ảnh) và `vi-du/zara/teardown-iamfacelesszara.md` (chữ), đều nằm trong skill.
 
 ## Kênh đó là gì (một đoạn)
 

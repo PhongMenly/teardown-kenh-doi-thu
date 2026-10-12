@@ -7,7 +7,7 @@ description: Mổ xẻ (teardown) một kênh đối thủ hoặc kênh mẫu tr
 
 Một lần teardown ra: báo cáo HTML 13 mục có ảnh khoanh đỏ, một file chữ tóm tắt, dữ liệu thô các bài, và thứ tự thử cho nhân vật của anh. Làm theo skill này thì lần sau không phải nghĩ lại cách làm.
 
-Bản mẫu thật: `D:\XÂY AI AGENT\teardown-zara\bao-cao-teardown-zara.html` (kênh @iamfacelesszara, quét 03/10/2026). Mở thử qua máy chủ cục bộ ở cuối file này.
+Bản mẫu thật: `vi-du/zara/bao-cao-teardown-zara.html` trong chính skill này (kênh @iamfacelesszara, quét 03/10/2026; ảnh ở `vi-du/zara/img/`). Mở thẳng bằng trình duyệt hoặc qua máy chủ cục bộ ở cuối file này. Làm kênh mới thì xem bản mẫu này trước để biết một báo cáo xong trông ra sao.
 
 ## Khi nào dùng
 

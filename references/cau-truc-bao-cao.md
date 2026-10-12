@@ -1,6 +1,6 @@
 # Cấu trúc và cách viết báo cáo teardown
 
-Báo cáo là một file HTML một trang, dựng từ `assets/mau-bao-cao.html` (đã có sẵn CSS, nhãn, khung khoanh đỏ, mục lục). Bản mẫu thật đã làm: `D:\XÂY AI AGENT\teardown-zara\bao-cao-teardown-zara.html`.
+Báo cáo là một file HTML một trang, dựng từ `assets/mau-bao-cao.html` (đã có sẵn CSS, nhãn, khung khoanh đỏ, mục lục). Bản mẫu thật đã làm: `vi-du/zara/bao-cao-teardown-zara.html` (trong skill).
 
 ## Bố cục thư mục đầu ra
 
